@@ -1,0 +1,144 @@
+/* Styles For Cart Area
+   Author: Cian Collier */
+
+#cart {
+  font-family: 'Open Sans';
+  height: 0;
+  overflow: hidden;
+  padding: 0 1.5rem 0 1.5rem;
+  position: relative;
+  visibility: hidden;
+  -webkit-transition: height 1.0s;
+  -moz-transition: height 1.0s;
+  -ms-transition: height 1.0s;
+  -o-transition: height 1.0s;
+  transition: height 1.0s;
+}
+
+#cart.expanded {
+  height: 30vh;
+  height: calc(var(--vh, 1vh) * 50);
+  visibility: visible;
+  -webkit-transition: height 1.0s;
+  -moz-transition: height 1.0s;
+  -ms-transition: height 1.0s;
+  -o-transition: height 1.0s;
+  transition: height 1.0s;
+}
+
+#cart-contents {
+  display: flex;
+  flex-wrap: wrap;
+  height: 75%;
+  overflow-y: auto;
+}
+
+.cart-item {
+  align-items: center;
+  display: flex;
+  height: 40%;
+  width: 25%;
+}
+
+.cart-item img {
+  height: 100%;
+  width: auto;
+}
+
+.cart-item-text {
+  margin-left: 0.5rem;
+}
+
+.cart-item h3, .cart-item h4 {
+  font-family: 'slingbold';
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.cart-item h3 {
+  color: #535355;
+}
+
+.cart-item h4 {
+  color: #0c101d;
+}
+
+.cart-quantity {
+  display: block;
+  padding-top: 0.5rem;
+}
+
+.cart-quantity strong {
+  font-family: 'Open Sans';
+  margin: 0 1.5rem 0 1.5rem;
+  text-align: center;
+}
+
+.quantity-minus, .quantity-plus {
+  background-color: #feba68;
+  border: 0;
+  color: #ffffff;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+#cart-footer {
+  align-items: center;
+  display: flex;
+  height: 15%;
+  left: 0;
+  justify-content: flex-end;
+  position: absolute;
+  top: 80%;
+  width: 100%;
+}
+
+#cart-footer button {
+  background-color: #1a545c;
+  border: 0;
+  color: #ffffff;
+  font-family: 'slingbold';
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  min-width: 15%;
+  height: 90%;
+  text-transform: uppercase;
+}
+
+/* Styles for Tablets (Landscape) and Phones (Landscape) */
+@media only screen and (max-width: 1200px) {
+  .cart-item {
+    height: 35%;
+    width: 33.3%;
+  }
+}
+
+/* Styles for Phones (Portrait) and Tablets (Portrait) */
+@media only screen and (max-width: 800px) {
+  #cart.expanded {
+    height: 90vh;
+    height: calc(var(--vh, 1vh) * 90);
+  }
+
+  #cart-contents {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 82%;
+  }
+
+  .cart-item {
+    height: 15%;
+    margin-top: 1rem;
+    width: 100%;
+  }
+
+  .cart-item h3, .cart-item h4 {
+    font-size: 1rem;
+  }
+
+  #cart-footer {
+    height: 8%;
+    top: 87%;
+  }
+}

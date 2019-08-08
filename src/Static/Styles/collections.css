@@ -1,0 +1,59 @@
+/* Styles For Collection and Furniture Sections
+   Author: Cian Collier */
+
+.collection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.collection-item {
+  color: #535355;
+  width: 24vw;
+}
+
+.collection-item img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.collection-item h1 {
+  font-family: 'slingbold';
+  font-size: 2rem;
+  line-height: 2rem;
+  margin: 1.4rem 0 0 0;
+  padding: 0;
+  width: 100%;
+}
+
+.collection-item h2 {
+  color: #0c101d;
+  font-family: 'slingbold';
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.collection-item p {
+  line-height: 2rem;
+  padding: 0;
+}
+
+/* Styles For Tablet Devices (Landscape) and Mobile Phones (Landscape) */
+@media only screen and (max-width: 800px) {
+  .collection-item {
+    margin-bottom: 2rem;
+    width: 45%;
+  }
+}
+
+/* Styles for Tablet Devices (Portrait) and Mobile Phones (Portrait) */
+@media only screen and (max-width: 500px) {
+  .collection-item {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+}

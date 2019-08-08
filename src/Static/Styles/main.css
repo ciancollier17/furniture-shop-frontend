@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+/* Import the Sling Bold font */
+@font-face {
+    font-family: 'slingbold';
+    src: url('../Fonts/slingbold-webfont.woff2') format('woff2'),
+         url('../Fonts/slingbold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans';
+}
+
+a {
+  text-decoration: none;
+}
+
+.content {
+  margin-left: 7vw;
+  margin-right: 7vw;
+  margin-top: 10vh;
+  width: 86vw;
+}
+
+.section-title {
+  color: #535355;
+  font-family: 'slingbold';
+  font-size: 4rem;
+}
+
+/* Styles for Mobile and Tablet Devices */
+@media only screen and (max-width: 800px) {
+  .content {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0 4% 0 4%;
+    width: 92%;
+  }
+
+  .section-title {
+    font-size: 3rem;
+  }
+}

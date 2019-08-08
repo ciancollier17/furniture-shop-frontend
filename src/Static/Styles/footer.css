@@ -1,0 +1,108 @@
+/* Styles For Footer Section
+   Author: Cian Collier */
+
+#footer {
+  display: flex;
+  height: 10.95vh;
+  width: 100%;
+}
+
+#footer a {
+  z-index: 1000;
+}
+
+#footer h3 {
+  color: #ffffff;
+  text-align: center;
+  width: 100%;
+}
+
+#scrolldown {
+  align-items: center;
+  background-color: #feba68;
+  display: flex;
+  height: 100%;
+  width: 19.5vw;
+}
+
+#footer-menu {
+  display: flex;
+  height: 100%;
+  justify-content: flex-end;
+  width: 80.5%;
+}
+
+#footer-menu ul {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0 7rem 0 0;
+}
+
+#footer-menu ul>li {
+  align-items: center;
+  display: flex;
+  color: #535355;
+  float: left;
+  padding: 0 4rem 0 4rem;
+}
+
+.arrow {
+  align-items: center;
+  background-color: #1a545c;
+  display: flex;
+  height: 100%;
+  width: 6.97vw;
+}
+
+#social-media-buttons {
+  display: none;
+}
+
+/* Styles for Tablet Devices (Landscape and Portrait) and Phones (Portrait and Landscape) */
+@media only screen and (max-width: 800px) {
+  #footer {
+    height: 9vh;
+    height: calc(var(--vh, 1vh) * 9);
+  }
+
+  #footer-menu ul {
+    display: none;
+  }
+
+  #social-media-buttons {
+    align-items: center;
+    display: flex;
+    flex-grow: 1;
+    font-size: 1.5rem;
+    height: 100%;
+    justify-content: space-around;
+  }
+
+  #social-media-buttons a {
+    text-decoration: none;
+  }
+
+  .facebook {
+    color: #3b5998;
+  }
+
+  .instagram {
+    color: #fb3958;
+  }
+
+  .twitter {
+    color: #1da1f2;
+  }
+
+  .arrow {
+    flex-shrink: 1;
+    width: 12.5vw;
+  }
+
+  #scrolldown {
+    width: 40vw;
+  }
+}

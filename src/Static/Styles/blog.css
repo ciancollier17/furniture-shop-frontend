@@ -1,0 +1,22 @@
+.blog-post-title {
+  font-family: 'slingbold';
+  font-size: 2.5rem;
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.blog-post-date {
+  color: #535355;
+}
+
+.blog-post-content img {
+  float: right;
+  height: auto;
+  margin: 0.8rem;
+  max-width: 98%;
+}
+
+.blog-post-content p {
+  line-height: 2rem;
+}

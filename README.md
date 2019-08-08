@@ -1,3 +1,6 @@
+# Furniture Shop (Frontend)
+This project is a React based, responsive user interface for an online furniture retailer.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
