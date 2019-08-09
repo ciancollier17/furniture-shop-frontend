@@ -35,3 +35,7 @@ gulp.task('fonts', function (done) {
 })
 
 gulp.task('default', gulp.series('css', 'js', 'img', 'fonts'));
+
+gulp.task('watch', function(done) {
+  gulp.watch('**/*', gulp.series('default'));
+});
